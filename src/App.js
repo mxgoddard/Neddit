@@ -6,6 +6,11 @@ import { Router } from '@reach/router';
 import Home from './components/Home.jsx';
 
 class App extends Component {
+
+	state = {
+
+	};
+	
 	render() {
     	return (
       		<div className="App">
