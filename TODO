@@ -4,10 +4,14 @@ TODO
 - Implement structure of homepage
 - Initalize to a repo
 - Organise styling
+- Get articles for homepage (top 10 most voted)
+- Make a better loading animation
+- Media Queries
 
 IDEAS
 
 - Have something scroll with the page?
+- Create a register function on the back-end
 
 COMPLETED
 

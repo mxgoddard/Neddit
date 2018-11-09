@@ -16,6 +16,11 @@ class Header extends Component {
                                 <p className="aLinks">Not Neddit</p>
                             </Link>
                         </div>
+                        <div  className="li" style={{float: 'right'}}>
+                            <Link id="HeaderTitleLink" to="/notneddit">
+                                <p className="aLinks">Login</p>
+                            </Link>
+                        </div>
                     </div>
             </div>
         );
