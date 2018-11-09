@@ -1,11 +1,12 @@
 import React from 'react';
+import ArticleBlock from './ArticleBlock/ArticleBlock.jsx';
 
 const Home = (props) => {
     return (
         <div>
             {props.articles.map(article => {
-                return <h4>{article.title}</h4>
-            })};
+                return <ArticleBlock key={article._id} article={article} />
+            })}
         </div>
     );
 };

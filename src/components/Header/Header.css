@@ -1,0 +1,49 @@
+#HeaderTitle {
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(73, 73, 73);
+  }
+  
+  #HeaderTitle:hover {
+    color: black;
+    text-decoration: none;
+  }
+  
+  #HeaderTitleLink {
+    text-decoration: none;
+  }
+  
+  
+  
+  #ul {
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    height: 100%;
+  
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    /* border: solid red 1px; */
+    /* height: 80% */
+  }
+  
+  .li {
+    float: left;
+    border-left: solid rgb(128, 128, 128) 1px;
+    border-right: solid rgb(128, 128, 128) 1px;
+  }
+  
+  .li .aLinks {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 6px 10px;
+    text-decoration: none;
+  }
+  
+  .li:hover {
+    background-color: #111;
+  }

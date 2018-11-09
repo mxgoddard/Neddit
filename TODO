@@ -1,12 +1,16 @@
 TODO
 
 - Change app logo
-- Implement structure of homepage
-- Initalize to a repo
-- Organise styling
 - Get articles for homepage (top 10 most voted)
 - Make a better loading animation
 - Media Queries
+- Have Not Neddit link to Reddit
+- Article Blocks link to the article
+- Loading simple when loading reddit
+
+BUGS
+
+- Login tab doesn't appear far right
 
 IDEAS
 
@@ -18,3 +22,7 @@ COMPLETED
 - Change default font
 - Implement header
 - Implement sidebar 
+- Implement structure of homepage
+- Initalize to a repo
+- Organise styling
+- Create 'create post' banner in sidebar

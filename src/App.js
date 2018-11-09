@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 import './App.css';
-import Header from './components/Header.jsx';
-import Sidebar from './components/Sidebar.jsx';
+import Header from './components/Header/Header.jsx';
+import Sidebar from './components/Sidebar/Sidebar.jsx';
 import { Router } from '@reach/router';
 import Home from './components/Home.jsx';
 import * as api from './utils/api.js';
+import LinkReddit from './components/LinkReddit.jsx';
+import CreateArticle from './components/CreateArticle/CreateArticle.jsx';
 
 class App extends Component {
 
@@ -21,6 +23,8 @@ class App extends Component {
 				<div className="ContentContainer">
 					<Router>
 						<Home path="/" articles={this.state.articles} />
+						<LinkReddit path="/notneddit"/>
+						<CreateArticle path="/create_article" />
 					</Router>
 				</div>
 

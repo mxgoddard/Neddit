@@ -1,0 +1,55 @@
+.PostArticleButton {
+    /* background-color: rgb(247, 231, 235); */
+    margin: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(9, 105, 184);
+}
+
+#CreateArticleBox {
+    text-decoration: none;
+    color: white;
+}
+
+.PostArticleButton:hover {
+    background-color: rgb(0, 148, 215);
+}
+
+.SidebarDiv {
+    margin: 5px;
+    padding: 5px;
+    border-radius: 7px;
+    /* background-color: rgb(230, 230, 230); */
+    border: solid rgb(161, 161, 161) 1px;
+    background-color: white;
+}
+
+.SidebarDiv h3 {
+    text-align: left;
+    margin-left: 25px;
+}
+
+.SidebarDiv p {
+    text-align: left;
+    margin-left: 25px;
+}
+
+.HotTopicDiv {
+    margin: 5px;
+    margin-top: 15px;
+    padding: 5px;
+    border-radius: 7px;
+    /* background-color: rgb(230, 230, 230); */
+    border: solid rgb(161, 161, 161) 1px;
+    background-color: white;
+}
+
+.HotTopicDiv h3 {
+    text-align: left;
+    margin-left: 25px;
+}
+
+.HotTopicDiv ul {
+    text-align: left;
+    margin-left: 25px;
+}

@@ -1,0 +1,13 @@
+.ArticleBlock {
+    /* text-align: center;
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 20px; */
+    border: 1px rgba(197, 197, 197, 0.5) solid;
+}
+
+.ArticleBlock:hover {
+    border: 1px rgba(41, 41, 41, 0.5) solid;
+}
