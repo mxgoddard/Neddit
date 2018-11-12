@@ -24,6 +24,7 @@ BUGS
 - Not Neddit link is slow and opens unwanted page
 - User can still post if text has no content
 - Throws error when no comments are returned for an article
+- Clean up code, get rid of useless code, make everything DRY
 
 IDEAS
 
