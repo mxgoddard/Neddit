@@ -7,6 +7,14 @@ TODO
 - Have Not Neddit link to Reddit
 - Article Blocks link to the article
 - Loading simple when loading reddit
+- Handle errors if the webpage can't load data
+- Specific article page
+- Link subneddit on specific article to subneddit page
+- Don't let user submit if there isn't any content in the textbox
+- When posting a comment, the created_by value needs to be linked to the current user
+- Display all comment bodies
+- Make a comment block component
+- Display all comment block components
 
 BUGS
 
@@ -16,6 +24,7 @@ IDEAS
 
 - Have something scroll with the page?
 - Create a register function on the back-end
+- Modal boxes (Prompt people to login) 
 
 COMPLETED
 
