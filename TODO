@@ -4,8 +4,6 @@ TODO
 - Get articles for homepage (top 10 most voted)
 - Make a better loading animation
 - Media Queries
-- Have Not Neddit link to Reddit
-- Article Blocks link to the article
 - Loading simple when loading reddit
 - Handle errors if the webpage can't load data
 - Specific article page
@@ -19,6 +17,9 @@ TODO
 BUGS
 
 - Login tab doesn't appear far right
+- Not Neddit link is slow and opens unwanted page
+- User can still post if text has no content
+- Throws error when no comments are returned for an article
 
 IDEAS
 
@@ -35,3 +36,5 @@ COMPLETED
 - Initalize to a repo
 - Organise styling
 - Create 'create post' banner in sidebar
+- Have Not Neddit link to Reddit
+- Article Blocks link to the article
