@@ -1,0 +1,22 @@
+.Article {
+    text-align: left;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+}
+
+.Article h4 {
+    margin-top: 30px;
+}
+
+/*
+
+.Article h2 {
+    text-align: left;
+    margin-left: 50px;
+}
+
+.Article p {
+    text-align: left;
+    margin-left: 50px;
+} */
