@@ -2,6 +2,7 @@ import React, { Component, Fragment } from 'react';
 import * as api from '../../utils/api.js'
 import './SpecificArticle.css';
 import PostCommentBox from '../PostCommentBox/PostCommentBox.jsx';
+import Comments from '../Comments/Comments.jsx';
 
 class SpecificArticle extends Component {
 
@@ -22,6 +23,8 @@ class SpecificArticle extends Component {
                     <p>{ body }</p>
 
                     <PostCommentBox articleId={_id} />
+
+                    <Comments articleId={_id} />
                 </div>
 
                 
