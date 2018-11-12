@@ -7,6 +7,7 @@ import Home from './components/Home.jsx';
 import * as api from './utils/api.js';
 import LinkReddit from './components/LinkReddit.jsx';
 import CreateArticle from './components/CreateArticle/CreateArticle.jsx';
+import SpecificArticle from './components/SpecificArticle/SpecificArticle';
 
 class App extends Component {
 
@@ -25,6 +26,7 @@ class App extends Component {
 						<Home path="/" articles={this.state.articles} />
 						<LinkReddit path="/notneddit"/>
 						<CreateArticle path="/create_article" />
+						<SpecificArticle path="/article/:article_id" />
 					</Router>
 				</div>
 
