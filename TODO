@@ -13,6 +13,10 @@ TODO
 - Display all comment bodies
 - Make a comment block component
 - Display all comment block components
+- Make loading component
+- Let owner of the article delete any comment or the article
+- Let poster of the comment have ability to delete their comment
+- Make nice consistent buttons
 
 BUGS
 
