@@ -53,4 +53,5 @@ body {
   grid-column-start: 1;
   grid-column-end: 9; 
   margin-left: 3%;
+  border-radius: 7px;
 }

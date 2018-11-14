@@ -9,26 +9,31 @@ import LinkReddit from './components/LinkReddit.jsx';
 import CreateArticle from './components/CreateArticle/CreateArticle.jsx';
 import SpecificArticle from './components/SpecificArticle/SpecificArticle';
 import Login from './components/Login/Login.jsx';
+import Profile from './components/Profile/Profile.jsx';
+import ArticlesByTopic from './components/ArticlesByTopic/ArticlesByTopic.jsx';
 
 class App extends Component {
 
 	state = {
 		articles: [],
-		loading: true
+		loading: true,
+		username: ''
 	};
 
 	render() {
     	return (
       		<div className="App">
-				<Header />
+				<Header login={this.login} username={this.state.username} />
 				<Sidebar />
 				<div className="ContentContainer">
-					<Router>
+					<Router primary={false} >
 						<Home path="/" articles={this.state.articles} />
 						<LinkReddit path="/notneddit"/>
 						<CreateArticle path="/create_article" />
 						<SpecificArticle path="/article/:article_id" />
-						<Login path="/login" />
+						<Login path="/login" login={this.login} />
+						<Profile path="/users/:username" login={this.login} />
+						<ArticlesByTopic path="/topics/:topic" />
 					</Router>
 				</div>
 
@@ -45,6 +50,15 @@ class App extends Component {
 			this.setState({ articles, loading: false });
 		})
 	};
+
+	login = (user) => {
+		if (user){
+			this.setState({ username: user });
+		}
+
+	};
+
+
 
 };
 
