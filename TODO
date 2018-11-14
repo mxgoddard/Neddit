@@ -1,5 +1,6 @@
 TODO
 
+- Look at Johnny's feedback
 - Change app logo
 - Get articles for homepage (top 10 most voted)
 - Make a better loading animation
@@ -17,6 +18,8 @@ TODO
 - Let owner of the article delete any comment or the article
 - Let poster of the comment have ability to delete their comment
 - Make nice consistent buttons
+- Make forms (comment box) nicer
+- Everything that can have a link and go somewhere should
 
 BUGS
 
@@ -25,6 +28,7 @@ BUGS
 - User can still post if text has no content
 - Throws error when no comments are returned for an article
 - Clean up code, get rid of useless code, make everything DRY
+- Clicking links puts user slightly down the page
 
 IDEAS
 

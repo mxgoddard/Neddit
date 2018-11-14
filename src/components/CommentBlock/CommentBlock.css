@@ -1,5 +1,62 @@
+p {
+    display: inline-block;
+}
+
+#createdByUser {
+    color: rgb(0, 151, 0);
+}
+
 .CommentBlock {
     text-align: left;
-    margin: 10px;
-    border: 1px solid black;
+    /* margin: 10px; */
+    /* border: 1px solid black; */
+    margin-bottom: 40px;
+
+    display: grid;
+    height: auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    /* grid-gap: 20px; */
 }
+
+.LikeCommentDiv {
+    border: solid rgb(226, 226, 226) 1px;
+    /* background-color: white; */
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+.LikeCommentDiv:hover {
+    background-color: rgb(204, 248, 204);
+    border: none;
+}
+
+.AboutCommentDiv {
+    margin: 10px;
+    /* border: solid rgb(226, 226, 226) 1px; */
+    border-bottom: solid rgb(226, 226, 226) 1px;
+    /* background-color: white; */
+    grid-column-start: 2;
+    grid-column-end: 12;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.CommentContentDiv {
+    margin: 10px;
+    border-bottom: solid rgb(226, 226, 226) 1px;
+    /* background-color: white; */
+    grid-column-start: 2;
+    grid-column-end: 12;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+/* border: solid rgb(161, 161, 161) 1px;
+background-color: white;
+grid-row-start: 1;
+grid-row-end: 2;
+grid-column-start: 1;
+grid-column-end: 12;  */
