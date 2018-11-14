@@ -11,21 +11,20 @@ class CommentBlock extends Component {
 
     render() {
 
-        const { created_by, votes, body, _id } = this.props.data;
+        const { created_by, votes, body } = this.props.data;
         
         return (
             <div className="CommentBlock">
-                {/* {console.log(this.props.data)} */}
-            <div onClick={this.likeComment} className={this.state.voted ? "LikedComment" : "LikeCommentDiv"}>
+                <div onClick={this.likeComment} className={this.state.voted ? "LikedComment" : "LikeCommentDiv"}>
 
+                </div>
+                <div className="AboutCommentDiv">
+                    <p id="createdByUser">{ created_by.username } </p> <p>  · { votes } points</p>
+                </div>
+                <div className="CommentContentDiv">
+                    <p>{ body }</p>
+                </div>
             </div>
-            <div className="AboutCommentDiv">
-                <p id="createdByUser">{ created_by.username } </p> <p>  · { votes } points</p>
-            </div>
-            <div className="CommentContentDiv">
-                <p>{ body }</p>
-            </div>
-        </div>
         );
     };
 
