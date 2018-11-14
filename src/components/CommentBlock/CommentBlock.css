@@ -29,6 +29,26 @@ p {
 }
 
 .LikeCommentDiv:hover {
+    /* background-color: rgb(204, 248, 204); */
+    border: 1px solid grey;
+}
+
+.LikedComment {
+    border: solid rgb(226, 226, 226) 1px;
+    /* background-color: white; */
+    background-color: rgb(204, 248, 204);
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    border: none;
+}
+
+.LikedComment:hover {
+    border: 1px solid grey;
+}
+
+.LikeCommentDiv:active {
     background-color: rgb(204, 248, 204);
     border: none;
 }

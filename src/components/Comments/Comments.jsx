@@ -18,7 +18,7 @@ class Comments extends Component {
         return (
             <div className="Comments">
                 { comments.map(comment => {
-                    return <CommentBlock key={comment._id} data={comment}/>
+                    return <CommentBlock key={comment._id} data={comment} cID={comment._id} />
                     // return <p key={comment._id} >{ comment.body }</p>
                 })}
             </div>

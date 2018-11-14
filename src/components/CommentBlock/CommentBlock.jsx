@@ -1,15 +1,22 @@
 import React, { Component } from 'react';
 import './CommentBlock.css';
+import * as api from '../../utils/api.js';
 
 class CommentBlock extends Component {
+
+    state = {
+        comment: {},
+        voted: false
+    };
+
     render() {
 
-        const { created_by, votes, body } = this.props.data;
+        const { created_by, votes, body, _id } = this.props.data;
         
         return (
             <div className="CommentBlock">
-                {console.log(this.props.data)}
-            <div onClick={this.likeComment} className="LikeCommentDiv">
+                {/* {console.log(this.props.data)} */}
+            <div onClick={this.likeComment} className={this.state.voted ? "LikedComment" : "LikeCommentDiv"}>
 
             </div>
             <div className="AboutCommentDiv">
@@ -22,8 +29,24 @@ class CommentBlock extends Component {
         );
     };
 
+    componentDidMount(){
+        this.setState({ comment: this.props.data });
+    };
+
     likeComment = () => {
-        console.log('Liked comment');
+        let vote = this.state.voted === false ? 'up' : 'false';
+        api.vote(this.props.cID, 'comments', vote);
+
+        let newComment = this.state.comment;
+
+        // Fake article vote up in case
+        if (!this.state.voted){
+            newComment.votes++;
+            this.setState({ comment: newComment, voted: true });
+        } else {
+            newComment.votes--;
+            this.setState({ comment: newComment, voted: false });
+        }
     };
 };
 
