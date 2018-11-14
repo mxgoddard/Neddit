@@ -7,20 +7,16 @@ TODO
 - Media Queries
 - Loading simple when loading reddit
 - Handle errors if the webpage can't load data
-- Specific article page
 - Link subneddit on specific article to subneddit page
 - Don't let user submit if there isn't any content in the textbox
 - When posting a comment, the created_by value needs to be linked to the current user
-- Display all comment bodies
-- Make a comment block component
-- Display all comment block components
 - Make loading component
 - Let owner of the article delete any comment or the article
 - Let poster of the comment have ability to delete their comment
 - Make nice consistent buttons
 - Make forms (comment box) nicer
 - Everything that can have a link and go somewhere should
-- Voting Component
+- Login
 
 BUGS
 
@@ -31,12 +27,14 @@ BUGS
 - Clean up code, get rid of useless code, make everything DRY
 - Clicking links puts user slightly down the page
 - Voting should be DRY
+- Don't let user vote / post if not logged in
 
 IDEAS
 
 - Have something scroll with the page?
 - Create a register function on the back-end
 - Modal boxes (Prompt people to login) 
+- Make an error component?
 
 COMPLETED
 
@@ -49,3 +47,9 @@ COMPLETED
 - Create 'create post' banner in sidebar
 - Have Not Neddit link to Reddit
 - Article Blocks link to the article
+- Change vote to utility function instead of component
+- Voting Component
+- Display all comment block components
+- Display all comment bodies
+- Make a comment block component
+- Specific article page
