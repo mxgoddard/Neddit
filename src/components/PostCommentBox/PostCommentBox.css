@@ -8,6 +8,7 @@
 #comment {
     width: 100%;
     height: 75px;
+    resize: none;
 }
 
 .PostCommentBox form {
