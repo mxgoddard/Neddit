@@ -22,3 +22,9 @@ export const getComments = async (id) => {
     const { data } = await axios.get(`${BASE_URL}articles/${id}/comments`);
     return data.comments;
 };
+
+export const vote = async (id, section, voted) => {
+    const url = `${BASE_URL}${section}/${id}?vote=${voted}`;
+    const { data } = await axios.patch(url);
+    return data;
+};
