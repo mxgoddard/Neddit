@@ -36,14 +36,29 @@ class Header extends Component {
                     </div>
                     {/*  */}
                     <div  className="li" style={{float: 'right'}}>
+                        {this.props.username === 'Login' &&
                         <Link id="HeaderTitleLink" to="/login">
                             <p className="aLinks">Login</p>
-                        </Link>
+                        </Link>}
+                        {this.props.username !== 'Login' &&
+                        <Link id="HeaderTitleLink" to={`/users/${this.props.username}`}> {/* Link to profile page */}
+                            <p className="aLinks">{ `Hello, ${localStorage.user}` }</p>
+                        </Link>}
                     </div>
                 </div>
             </div>
         );
     };
-}
+
+    componentDidMount(){
+        // Find user
+        console.log(localStorage.user);
+        if (localStorage.user){
+            this.props.login(localStorage.user);
+        } else {
+            this.props.login('Login');
+        }
+    };
+};
 
 export default Header;
