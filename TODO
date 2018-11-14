@@ -16,18 +16,20 @@ TODO
 - Make nice consistent buttons
 - Make forms (comment box) nicer
 - Everything that can have a link and go somewhere should
-- Login
+- Profile Page
+- Try Catch getting comments
+- Ability to delete articles
+- Create admin account that can delete all articles
+- Ability to delete comments
 
 BUGS
 
-- Login tab doesn't appear far right
 - Not Neddit link is slow and opens unwanted page
 - User can still post if text has no content
 - Throws error when no comments are returned for an article
 - Clean up code, get rid of useless code, make everything DRY
-- Clicking links puts user slightly down the page
-- Voting should be DRY
 - Don't let user vote / post if not logged in
+- Creating a comment, created_by might only be an ID instead of an object
 
 IDEAS
 
@@ -53,3 +55,12 @@ COMPLETED
 - Display all comment bodies
 - Make a comment block component
 - Specific article page
+- Clicking links puts user slightly down the page
+- Login
+- Error check logging in
+- Logout doesn't work instantly
+- Need to get ID of current user
+- Create article page
+- Login tab doesn't appear far right
+- Voting should be DRY
+- Articles by topics (Hot Topics)
