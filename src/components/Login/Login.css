@@ -1,0 +1,54 @@
+/* button {
+    margin-top: 1.5em;
+} */
+
+#LoginForm {
+    margin: 4em;
+    /* border: solid rgb(214, 214, 214) 1px; */
+}
+
+#LoginForm:hover {
+    /* border: 1px rgba(0, 0, 0, 0.5) solid; */
+}
+
+#RedErr {
+    color: rgb(253, 115, 115);
+}
+
+.Login {
+    border: solid rgb(214, 214, 214) 1px;
+    background-color: white;
+    margin: 2em;
+}
+
+.Login:hover {
+    border: 1px rgba(0, 0, 0, 0.5) solid;
+}
+
+#user {
+    /* width: 16em; */
+    width: 40%;
+}
+
+.LoginButton {
+    /* background-color: rgb(247, 231, 235); */
+    margin: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(9, 105, 184);
+    margin-left: 37%;
+    margin-right: 37%;
+}
+
+#CreateLoginBox {
+    text-decoration: none;
+    color: white;
+}
+
+.LoginButton:hover {
+    background-color: rgb(0, 148, 215);
+}
+
+.wrongInput {
+    border: 0.2em solid red;
+}
