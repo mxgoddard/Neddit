@@ -21,12 +21,12 @@ class Header extends Component {
                     {/*  */}
                     <div  className="li" style={{float: 'right'}}>
                         <Link id="HeaderTitleLink" to="/">
-                            <p className="aLinks"></p>
+                            <p className="aLinks">Hot</p>      {/* Highest rated articles */}
                         </Link>
                     </div>
                     <div  className="li" style={{float: 'right'}}>
                         <Link id="HeaderTitleLink" to="/">
-                            <p className="aLinks"></p>
+                            <p className="aLinks">Controversial</p>    {/* Most comments */}
                         </Link>
                     </div>
                     <div  className="li" style={{float: 'right'}}>
@@ -36,7 +36,7 @@ class Header extends Component {
                     </div>
                     {/*  */}
                     <div  className="li" style={{float: 'right'}}>
-                        <Link id="HeaderTitleLink" to="/">
+                        <Link id="HeaderTitleLink" to="/login">
                             <p className="aLinks">Login</p>
                         </Link>
                     </div>

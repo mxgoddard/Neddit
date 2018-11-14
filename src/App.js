@@ -8,6 +8,7 @@ import * as api from './utils/api.js';
 import LinkReddit from './components/LinkReddit.jsx';
 import CreateArticle from './components/CreateArticle/CreateArticle.jsx';
 import SpecificArticle from './components/SpecificArticle/SpecificArticle';
+import Login from './components/Login/Login.jsx';
 
 class App extends Component {
 
@@ -27,6 +28,7 @@ class App extends Component {
 						<LinkReddit path="/notneddit"/>
 						<CreateArticle path="/create_article" />
 						<SpecificArticle path="/article/:article_id" />
+						<Login path="/login" />
 					</Router>
 				</div>
 
