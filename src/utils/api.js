@@ -50,6 +50,11 @@ export const getTopics = async () => {
 export const postArticle = async (slug, article) => {
     const url = `${BASE_URL}topics/${slug}/articles`;
     const { data } = await axios.post(url, article);
-    console.log(data);
     return data;
 };
+
+export const getArticlesByTopic = async (slug) => {
+    const url = `${BASE_URL}topics/${slug}/articles`;
+    const { data } = await axios.get(url);
+    return data.articles;
+}
