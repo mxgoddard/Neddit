@@ -1,8 +1,14 @@
 import React, { Component } from 'react';
 import { Link } from '@reach/router';
 import './Sidebar.css';
+import * as api from '../../utils/api.js';
 
 class Sidebar extends Component {
+
+    state = {
+        topics: []
+    };
+
     render() {
         return (
             <div className="SidebarContainer">
@@ -17,15 +23,27 @@ class Sidebar extends Component {
                 <div className="HotTopicDiv">
                     <h3>Hot Topics</h3>
                     <ul>
-                        <li>Coding</li>
-                        <li>Football</li>
-                        <li>Cooking</li>
+                        {this.state.topics.map(topic => {
+                            return (
+                                <Link key={topic.slug} className="TopicLink" to={`/topics/${topic.slug}`}><li>{topic.title}</li></Link>
+                            );
+                        })}
                     </ul>
                 </div>
 
             </div>
         );
-    }
-}
+    };
+
+    componentDidMount(){
+        this.fetchTopics();
+    };
+
+    fetchTopics = () => {
+        api.getTopics().then(topics => {
+            this.setState({ topics });
+        })
+    };
+};
 
 export default Sidebar;

@@ -53,3 +53,12 @@
     text-align: left;
     margin-left: 25px;
 }
+
+.TopicLink {
+    text-decoration: none;
+    color: black;
+}
+
+.TopicLink:hover {
+    color: blue;
+}
