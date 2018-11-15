@@ -1,14 +1,5 @@
-/* button {
-    margin-top: 1.5em;
-} */
-
 #LoginForm {
     margin: 4em;
-    /* border: solid rgb(214, 214, 214) 1px; */
-}
-
-#LoginForm:hover {
-    /* border: 1px rgba(0, 0, 0, 0.5) solid; */
 }
 
 #RedErr {
@@ -26,12 +17,10 @@
 }
 
 #user {
-    /* width: 16em; */
     width: 40%;
 }
 
 .LoginButton {
-    /* background-color: rgb(247, 231, 235); */
     margin: 20px;
     padding: 10px;
     border-radius: 5px;

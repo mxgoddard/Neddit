@@ -8,20 +8,15 @@ p {
 
 .CommentBlock {
     text-align: left;
-    /* margin: 10px; */
-    /* border: 1px solid black; */
     margin-bottom: 40px;
-
     display: grid;
     height: auto;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    /* grid-gap: 20px; */
 }
 
 .LikeCommentDiv {
     border: solid rgb(226, 226, 226) 1px;
-    /* background-color: white; */
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
@@ -29,13 +24,11 @@ p {
 }
 
 .LikeCommentDiv:hover {
-    /* background-color: rgb(204, 248, 204); */
     border: 1px solid grey;
 }
 
 .LikedComment {
     border: solid rgb(226, 226, 226) 1px;
-    /* background-color: white; */
     background-color: rgb(204, 248, 204);
     grid-column-start: 1;
     grid-column-end: 2;
@@ -55,9 +48,7 @@ p {
 
 .AboutCommentDiv {
     margin: 10px;
-    /* border: solid rgb(226, 226, 226) 1px; */
     border-bottom: solid rgb(226, 226, 226) 1px;
-    /* background-color: white; */
     grid-column-start: 2;
     grid-column-end: 12;
     grid-row-start: 1;
@@ -67,16 +58,17 @@ p {
 .CommentContentDiv {
     margin: 10px;
     border-bottom: solid rgb(226, 226, 226) 1px;
-    /* background-color: white; */
     grid-column-start: 2;
     grid-column-end: 12;
     grid-row-start: 2;
     grid-row-end: 4;
 }
 
-/* border: solid rgb(161, 161, 161) 1px;
-background-color: white;
-grid-row-start: 1;
-grid-row-end: 2;
-grid-column-start: 1;
-grid-column-end: 12;  */
+.TrashIcon {
+    margin-left: 0.5em;
+    color: rgb(151, 151, 151);
+}
+
+.TrashIcon:hover {
+    color: black;
+}

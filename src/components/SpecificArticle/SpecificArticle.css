@@ -9,14 +9,33 @@
     margin-top: 30px;
 }
 
-/*
-
-.Article h2 {
-    text-align: left;
-    margin-left: 50px;
+.LikedArticle:hover {
+    border: 1px solid grey;
 }
 
-.Article p {
-    text-align: left;
-    margin-left: 50px;
-} */
+.LikeArticleDiv:active {
+    background-color: rgb(204, 248, 204);
+    border: none;
+}
+
+.LikeArticleDiv {
+    border: solid rgb(226, 226, 226) 1px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+.LikeArticleDiv:hover {
+    border: 1px solid grey;
+}
+
+.LikedArticle {
+    border: solid rgb(226, 226, 226) 1px;
+    background-color: rgb(204, 248, 204);
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    border: none;
+}
