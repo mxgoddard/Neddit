@@ -17,18 +17,17 @@ TODO
 - Make forms (comment box) nicer
 - Everything that can have a link and go somewhere should
 - Profile Page
-- Try Catch getting comments
 - Ability to delete articles
 - Create admin account that can delete all articles
-- Ability to delete comments
+- Make voting dry
+- Fake comment post
+- Clear input on comment post
 
 BUGS
 
 - Not Neddit link is slow and opens unwanted page
-- User can still post if text has no content
 - Throws error when no comments are returned for an article
 - Clean up code, get rid of useless code, make everything DRY
-- Don't let user vote / post if not logged in
 - Creating a comment, created_by might only be an ID instead of an object
 
 IDEAS
@@ -64,3 +63,8 @@ COMPLETED
 - Login tab doesn't appear far right
 - Voting should be DRY
 - Articles by topics (Hot Topics)
+- Ability to delete comments
+- Article Voting
+- User can still post if text has no content
+- Don't let user vote / post if not logged in
+- Try Catch getting comments
