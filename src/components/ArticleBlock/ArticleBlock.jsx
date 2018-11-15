@@ -4,10 +4,6 @@ import './ArticleBlock.css';
 class ArticleBlock extends Component {
     render() {
 
-        // state = {
-
-        // };
-
         const { title } = this.props.article;
 
         return (

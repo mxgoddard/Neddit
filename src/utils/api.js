@@ -57,4 +57,10 @@ export const getArticlesByTopic = async (slug) => {
     const url = `${BASE_URL}topics/${slug}/articles`;
     const { data } = await axios.get(url);
     return data.articles;
-}
+};
+
+export const deleteComment = async (id) => {
+    const url = `${BASE_URL}comments/${id}`;
+    const { data } = await axios.delete(url);
+    return data.comment;
+};

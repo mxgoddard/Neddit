@@ -6,14 +6,12 @@ class Profile extends Component {
         return (
             <div>
                 <h2>Profile Page!</h2>
-
                 <button onClick={this.handleClick}>Logout</button>
             </div>
         );
     };
 
     handleClick = () => {
-        // Logout
         localStorage.removeItem("user");
         localStorage.removeItem("userID");
         this.props.login('Login');

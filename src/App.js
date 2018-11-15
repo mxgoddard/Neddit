@@ -48,18 +48,14 @@ class App extends Component {
 	fetchArticles = () => {
 		api.getArticles().then(articles => {
 			this.setState({ articles, loading: false });
-		})
+		});
 	};
 
 	login = (user) => {
 		if (user){
 			this.setState({ username: user });
-		}
-
+		};
 	};
-
-
-
 };
 
 export default App;

@@ -18,8 +18,7 @@ class Comments extends Component {
         return (
             <div className="Comments">
                 { comments.map(comment => {
-                    return <CommentBlock key={comment._id} data={comment} cID={comment._id} />
-                    // return <p key={comment._id} >{ comment.body }</p>
+                    return <CommentBlock key={comment._id} data={comment} cID={comment._id} aID={this.props.articleId} />
                 })}
             </div>
         );
@@ -30,9 +29,15 @@ class Comments extends Component {
     };
 
     fetchComments = () => {
-        api.getComments(this.props.articleId).then(comments => {
-            this.setState({ comments, loading: false });
-        });
+        try {
+            api.getComments(this.props.articleId).then(comments => {
+                this.setState({ comments, loading: false });
+            });
+        } catch(err) {
+            console.log(err);
+            this.setState({ loading: false });
+        }
+
     };
 };
 

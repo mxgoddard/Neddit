@@ -14,10 +14,12 @@ class Sidebar extends Component {
             <div className="SidebarContainer">
                 <div className="SidebarDiv">
                     <h3>Home</h3>
-                    <p>Welcome to Neddit. Click the button below if you want to create an article.</p>
+                    {localStorage.getItem("user") ? <p>Welcome to Neddit. Click the button below if you want to create an article.</p> : <p>Welcome to Neddit. Click the button above to login to post articles and comment.</p>}
+                    {localStorage.getItem("user") &&
                     <div className="PostArticleButton">
                         <Link to="/create_article" id="CreateArticleBox">Post Article</Link>
                     </div>
+                    }
                 </div>
 
                 <div className="HotTopicDiv">

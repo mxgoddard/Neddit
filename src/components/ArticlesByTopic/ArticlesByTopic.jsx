@@ -40,10 +40,3 @@ class ArticlesByTopic extends Component {
 };
 
 export default ArticlesByTopic;
-
-// {props.articles.map(article => {
-//     return (
-//         <Link key={article._id} to={`article/${article._id}`} id="ArticleBlockTitle">
-//             <ArticleBlock article={article} />
-//         </Link>
-//     )  

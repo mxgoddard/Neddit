@@ -45,7 +45,6 @@ class Login extends Component {
                 this.setState({ valid: false });
             }
         });
-
         this.setState({ user: '' });
     };
 };

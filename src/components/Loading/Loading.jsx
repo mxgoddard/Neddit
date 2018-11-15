@@ -1,11 +1,13 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-const Loading = () => {
-    return (
-        <div>
-            <h3>Loading...</h3>
-        </div>
-    );
+class Loading extends Component {
+    render() {
+        return (
+            <div>
+                <h3>Loading...</h3>
+            </div>
+        );
+    };
 };
 
 export default Loading;

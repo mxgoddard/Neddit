@@ -13,15 +13,11 @@ class PostCommentBox extends Component {
             <div className="PostCommentBox">
                 <form onSubmit={this.handleSubmit}>
                     <textarea onChange={this.handleChange} value={this.state.comment} id="comment" placeholder="Enter your comment here." ></textarea>
-                    <button>Post Comment</button>
+                    <button className="PostCommentButton" >Post Comment</button>
                 </form>
             </div>
         );
     };
-
-    // componentDidMount(){
-        
-    // };
 
     handleChange = (e) => {
         const { value } = e.target;
@@ -35,11 +31,10 @@ class PostCommentBox extends Component {
         commentObj.created_by = '5bd83db143c3eb100da508a3';
         api.postComment(commentObj, this.props.articleId).then(comment => {
             console.log(comment);
+        }).then(() => {
+            this.props.forceUpdate();
         });
-
         e.preventDefault();
-
-        // navigate(`/articles/${this.props.articleID}`);
     };
 };
 

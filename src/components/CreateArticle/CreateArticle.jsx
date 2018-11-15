@@ -15,7 +15,6 @@ class CreateArticle extends Component {
 
     render() {
         return (
-            // <div className="CreateArticleDiv">
                 <form className="CreateArticleDiv" onSubmit={this.handleSubmit}>
                     <h3 className="CreateArticleTitle" >Create Article</h3> 
                     <select onChange={this.handleChange} id="topic" className="CreateArticleSelect" >
@@ -31,7 +30,6 @@ class CreateArticle extends Component {
                     <br></br><br></br>
                     <button className="CreateArticleButton" >Post Article</button>
                 </form>
-            // </div>
         );
     };
 
