@@ -1,9 +1,9 @@
 import React, { Component, Fragment } from 'react';
 import * as api from '../../utils/api.js'
 import './SpecificArticle.css';
-import PostCommentBox from '../PostCommentBox/PostCommentBox.jsx';
 import Comments from '../Comments/Comments.jsx';
 import Loading from '../Loading/Loading.jsx';
+import { navigate } from '@reach/router'; 
 
 class SpecificArticle extends Component {
 
@@ -14,21 +14,31 @@ class SpecificArticle extends Component {
     };
 
     render() {
+
+        // const { created_by, votes, body } = this.props.data;
+        // let creator;
+
+        // try {
+        //     creator = created_by.username;
+        // } catch (err) {
+        //     console.log(err);
+        //     creator = 'Unkown';
+        // }
+
         if (this.state.loading) return <Loading />
 
         const { title, belongs_to, created_by, body, _id } = this.state.article;
 
+
         return (
             <Fragment>
                 <div className="Article">
-                    <h4><b>n/{ belongs_to } · </b>Posted by { created_by.username } · { this.state.article.votes } Points </h4><h2>{ title }</h2>
+                    <h4><b className="TopicHover" onClick={this.goTopicPage}>n/{ belongs_to } · </b><span className="UserHover" onClick={this.goUserPage}>Posted by { created_by.username }</span> · { this.state.article.votes } Points </h4><h2>{ title }</h2>
                     <p>{ body }</p>
 
                     <div onClick={this.likeArticle} className={this.state.voted ? "LikedArticle" : "LikeArticleDiv"}>
                         <p></p>
                     </div>
-
-                    {localStorage.getItem("user") && <PostCommentBox articleId={_id} forceUpdate={this.displayNewArticleComments}/>}
                     
                     <Comments articleId={_id} />
                 </div>
@@ -61,9 +71,13 @@ class SpecificArticle extends Component {
         }
     };
 
-    displayNewArticleComments = () => {
-        this.forceUpdate();
+    goTopicPage = () => {
+        navigate(`/topics/${this.state.article.belongs_to}`);
     };
+
+    goUserPage = () => {
+        navigate(`/users/${this.state.article.created_by.username}`);
+    }
 };
 
 export default SpecificArticle;
