@@ -35,7 +35,7 @@ class Login extends Component {
         api.login(this.state.user).then(user => {
             if (user) {
                 this.setState({ valid: true });
-                console.log(user);
+                localStorage.setItem('userObj', user);
                 localStorage.setItem('user', user.username);
                 localStorage.setItem('userID', user._id);
                 this.props.login(user.username);

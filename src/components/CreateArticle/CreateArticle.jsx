@@ -48,7 +48,7 @@ class CreateArticle extends Component {
         let articleObj = {};
         articleObj.body = this.state.contents;
         articleObj.title = this.state.title;
-        articleObj.created_by = localStorage.getItem("userID");
+        articleObj.created_by = JSON.parse(localStorage.getItem("userObj"));
 
         api.postArticle(this.state.topic, articleObj).then(article => {
             navigate(`/article/${article._id}`);
