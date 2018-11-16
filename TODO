@@ -7,28 +7,22 @@ TODO
 - Media Queries
 - Loading simple when loading reddit
 - Handle errors if the webpage can't load data
-- Link subneddit on specific article to subneddit page
 - Don't let user submit if there isn't any content in the textbox
-- When posting a comment, the created_by value needs to be linked to the current user
-- Make loading component
 - Let owner of the article delete any comment or the article
-- Let poster of the comment have ability to delete their comment
 - Make nice consistent buttons
 - Make forms (comment box) nicer
 - Everything that can have a link and go somewhere should
-- Profile Page
 - Ability to delete articles
 - Create admin account that can delete all articles
 - Make voting dry
-- Fake comment post
-- Clear input on comment post
+- Hot leads to all articles sorted by most votes
+- Controversial leads to all articles sorted by most comments
 
 BUGS
 
 - Not Neddit link is slow and opens unwanted page
 - Throws error when no comments are returned for an article
 - Clean up code, get rid of useless code, make everything DRY
-- Creating a comment, created_by might only be an ID instead of an object
 
 IDEAS
 
@@ -68,3 +62,13 @@ COMPLETED
 - User can still post if text has no content
 - Don't let user vote / post if not logged in
 - Try Catch getting comments
+- On specific article page, link the topic and the user
+- Profile Page
+- Clear input on comment post
+- Fake comment post
+- Profile Page
+- Let poster of the comment have ability to delete their comment
+- Make loading component
+- When posting a comment, the created_by value needs to be linked to the current user
+- Link subneddit on specific article to subneddit page
+- Creating a comment, created_by might only be an ID instead of an object
