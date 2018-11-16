@@ -28,11 +28,10 @@ class PostCommentBox extends Component {
         let commentObj = {};
         commentObj.body = this.state.comment;
         commentObj.votes = 0;
-        commentObj.created_by = '5bd83db143c3eb100da508a3';
+        commentObj.created_by = JSON.parse(localStorage.getItem("userObj"));
         api.postComment(commentObj, this.props.articleId).then(comment => {
-            console.log(comment);
-        }).then(() => {
-            this.props.forceUpdate();
+            this.setState({ comment: '' })
+            this.props.addComment(comment);
         });
         e.preventDefault();
     };
