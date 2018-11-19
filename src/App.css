@@ -41,3 +41,31 @@ body {
   margin-left: 3%;
   border-radius: 7px;
 }
+
+@media only screen and (max-width: 600px) {
+  .App {
+    grid-gap: 0px;
+    margin: 0px;
+  }
+
+  .ContentContainer {
+    display: flex;
+    flex-direction: column;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 12; 
+    margin-left: 0.2em;
+    margin-right: 0.2em;
+  }
+
+  .SidebarContainer {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    display: flex;
+    flex-direction: column;
+    grid-column-start: 1;
+    grid-column-end: 12; 
+    margin: 0px;
+  }
+}

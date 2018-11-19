@@ -2,6 +2,9 @@
   display: inline-block;
   text-decoration: none;
   color: rgb(73, 73, 73);
+
+  overflow: hidden;
+
 }
   
 #HeaderTitle:hover {
@@ -27,11 +30,13 @@
   
 .li {
   float: left;
+  display: block;
   border-left: solid rgb(128, 128, 128) 1px;
   border-right: solid rgb(128, 128, 128) 1px;
 }
   
 .li .aLinks {
+  text-align: center;
   display: block;
   color: white;
   text-align: center;
@@ -45,4 +50,11 @@
 
 .icons {
   margin-left: 0.4em;
+}
+
+@media screen and (max-width: 600px) {
+  .li {
+      float: none;
+      width: 100%;
+  }
 }
