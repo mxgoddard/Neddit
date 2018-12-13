@@ -34,8 +34,11 @@ class Login extends Component {
         e.preventDefault();
         api.login(this.state.user).then(user => {
             if (user) {
+                console.log(user);
+                console.log('^^^');
                 this.setState({ valid: true });
                 localStorage.setItem('userObj', user);
+                localStorage.getItem('userObj');
                 localStorage.setItem('user', user.username);
                 localStorage.setItem('userID', user._id);
                 this.props.login(user.username);
@@ -45,7 +48,7 @@ class Login extends Component {
                 this.setState({ valid: false });
             }
         });
-        this.setState({ user: '' });
+        // this.setState({ user: '' });
     };
 };
 

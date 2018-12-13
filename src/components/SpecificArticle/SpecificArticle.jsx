@@ -52,6 +52,7 @@ class SpecificArticle extends Component {
 
     fetchArticle = () => {
         api.getArticle(this.props.article_id).then(article => {
+            console.log(article);
             this.setState({ article, loading: false });
         });
     };

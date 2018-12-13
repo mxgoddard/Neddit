@@ -25,6 +25,7 @@ class PostCommentBox extends Component {
     };
 
     handleSubmit = (e) => {
+        e.preventDefault();
         let commentObj = {};
         commentObj.body = this.state.comment;
         commentObj.votes = 0;
@@ -33,7 +34,7 @@ class PostCommentBox extends Component {
             this.setState({ comment: '' })
             this.props.addComment(comment);
         });
-        e.preventDefault();
+        
     };
 };
 
