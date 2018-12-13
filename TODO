@@ -23,6 +23,7 @@ BUGS
 - Not Neddit link is slow and opens unwanted page
 - Throws error when no comments are returned for an article
 - Clean up code, get rid of useless code, make everything DRY
+- Pages refresh on submit on live version
 
 IDEAS
 
