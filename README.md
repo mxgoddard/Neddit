@@ -10,7 +10,7 @@ Neddit is an online forum, in the style of [Reddit](https://www.reddit.com/) whe
 
 I've built it using a back-end API that I made a couple weeks prior. The API is built with [Express.js](https://expressjs.com/) and uses [MongoDB](https://www.mongodb.com/) as a database.
 
-[Link to the Back-End Repo](https://github.com/mxgoddard/BE2-northcoders-news)
+[Link to the Back-End Repo](https://github.com/mxgoddard/northcoder-news)
 
 [Back-End API](https://ncreddit.herokuapp.com/)
 
