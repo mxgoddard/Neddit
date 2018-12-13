@@ -4,7 +4,9 @@ Neddit is an online forum, in the style of [Reddit](https://www.reddit.com/) whe
 
 [Click to see Neddit](https://neddit.netlify.com/)
 
-If you haven't used the application before, please allow a bit longer for the server to wake up.
+ - If you haven't used the application before, please allow a bit longer for the server to wake up.
+
+ - Please login with 'jessjelly' to see majority of the options.
 
 I've built it using a back-end API that I made a couple weeks prior. The API is built with [Express.js](https://expressjs.com/) and uses [MongoDB](https://www.mongodb.com/) as a database.
 
