@@ -48,7 +48,7 @@ class CreateArticle extends Component {
         let articleObj = {};
         articleObj.body = this.state.contents;
         articleObj.title = this.state.title;
-        articleObj.created_by = JSON.parse(localStorage.getItem("userObj"));
+        articleObj.created_by = localStorage.getItem("userID");
         // articleObj.created_by = localStorage.getItem("userID");
         // console.log(localStorage.getItem("userObj"));
         console.log(articleObj.created_by);
