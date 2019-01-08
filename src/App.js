@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Header from './components/Header/Header.jsx';
 import Sidebar from './components/Sidebar/Sidebar.jsx';
-import { Router } from '@reach/router';
+import { Router, navigate } from '@reach/router';
 import Home from './components/Home.jsx';
 import * as api from './utils/api.js';
 import LinkReddit from './components/LinkReddit.jsx';
@@ -43,6 +43,30 @@ class App extends Component {
 	  
 	componentDidMount(){
 		this.fetchArticles();
+
+		// Point to a logged in state
+		const pointLoggedIn = true;
+
+		if (pointLoggedIn) {
+
+			api.login('jessjelly').then(user => {
+				if (user) {
+					console.log(user);
+					console.log('^^^');
+					this.setState({ valid: true });
+					localStorage.setItem('userObj', user);
+					localStorage.getItem('userObj');
+					localStorage.setItem('user', user.username);
+					localStorage.setItem('userID', user._id);
+					this.login(user.username);
+					navigate('/');
+				} else {
+					console.log(':(');
+					this.setState({ valid: false });
+				}
+			});
+
+		}
 	};
 
 	fetchArticles = () => {
